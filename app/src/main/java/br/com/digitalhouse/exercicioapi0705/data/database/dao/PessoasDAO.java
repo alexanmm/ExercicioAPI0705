@@ -33,10 +33,10 @@ public interface PessoasDAO {
     @Query("SELECT * FROM tab_pessoas limit 30")
     Flowable<List<Pessoa>> getAllRxJava();
 
-    @Query("SELECT * FROM tab_pessoas WHERE idBanco = :id")
-    Pessoa getPessoaById(long id);
+    //@Query("SELECT * FROM tab_pessoas WHERE idBanco = :id")
+    //Pessoa getPessoaById(long id);
 
-    @Query("SELECT * FROM tab_pessoas WHERE idBanco = :id")
-    Flowable<Pessoa> getPessoaByIdRxJava(long id);
+    //@Query("SELECT * FROM tab_pessoas WHERE idBanco = :id")
+    //Flowable<Pessoa> getPessoaByIdRxJava(long id);
 
 }

@@ -16,6 +16,7 @@ import io.reactivex.Single;
 
 public class PessoasRepository {
     public Single<PessoasResponse> obterListaPessoasDoArquivo(Context context) {
+
         try {
             AssetManager manager = context.getAssets();
             InputStream newJson = manager.open("lista_pessoas.json");
@@ -34,6 +35,6 @@ public class PessoasRepository {
     }
 
     public Single<PessoasResponse> obterListaPessoasInternet(){
-        return ApiService.getApiService().getListaPessoas();
+        return ApiService.getApiService().getPessoas(10);
     }
 }

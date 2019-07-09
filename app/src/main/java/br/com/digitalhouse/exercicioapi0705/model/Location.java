@@ -10,7 +10,7 @@ public class Location {
     @Expose
     private Coordinates coordinates;
     @Expose
-    private Long postcode;
+    private String postcode;
     @Expose
     private String state;
     @Expose
@@ -34,11 +34,11 @@ public class Location {
         this.coordinates = coordinates;
     }
 
-    public Long getPostcode() {
+    public String getPostcode() {
         return postcode;
     }
 
-    public void setPostcode(Long postcode) {
+    public void setPostcode(String postcode) {
         this.postcode = postcode;
     }
 
